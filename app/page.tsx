@@ -121,30 +121,7 @@ export default function Page() {
       {/* Controls */}
       <section className="card p-6">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <label className="space-y-1">
-            <span className="section-title">Mode</span>
-            <select className="select" value={mode} onChange={e => setMode(e.target.value as Mode)}>
-              <option value="general">General</option>
-              <option value="industry">Industry</option>
-              <option value="company">Company</option>
-            </select>
-          </label>
-          <label className="space-y-1">
-            <span className="section-title">Role</span>
-            <input className="input" value="Product Manager" onChange={e => setRole(e.target.value)} placeholder="e.g., Product Manager" />
-          </label>
-          {mode !== "company" && (
-            <label className="space-y-1">
-              <span className="section-title">Industry</span>
-              <input className="input" value={industry} onChange={e => setIndustry(e.target.value)} placeholder="e.g., Fintech" />
-            </label>
-          )}
-          {mode !== "industry" && (
-            <label className="space-y-1">
-              <span className="section-title">Company</span>
-              <input className="input" value={company} onChange={e => setCompany(e.target.value)} placeholder="e.g., Stripe" />
-            </label>
-          )}
+          
         </div>
 
         <div className="mt-4 flex flex-wrap gap-3">
