@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --bg: 248 250 252; }
+
+html, body { height: 100%; }
+body { background-color: rgb(var(--bg)); }
+
+.card { @apply bg-white rounded-2xl shadow-sm border border-slate-200; }
+.btn { @apply inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold hover:shadow-sm active:scale-[.99] transition; }
+.badge { @apply inline-flex items-center rounded-full border border-slate-200 px-3 py-1 text-xs font-medium bg-slate-50; }
+.input { @apply w-full rounded-xl border border-slate-300 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-slate-300; }
+.select { @apply w-full rounded-xl border border-slate-300 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-slate-300 bg-white; }
+.section-title { @apply text-sm text-slate-500; }
+.score-track { @apply h-2 w-full rounded-full bg-slate-200; }
+.score-fill { @apply h-2 rounded-full; }
+.gradient-bar { background-image: linear-gradient(90deg, hsl(222, 89%, 60%), hsl(161, 94%, 30%)); }
+.header-gradient {
+  background-image:
+    radial-gradient(1200px 400px at 20% -10%, rgba(59,130,246,.15), transparent),
+    radial-gradient(800px 300px at 80% -20%, rgba(16,185,129,.15), transparent);
+}
